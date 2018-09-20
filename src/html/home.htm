@@ -214,6 +214,11 @@
               <span class="small-text">e.g 'emonpi', 'test.mosquitto.org', '192.168.1.4'</span>
             </p>
             <p data-bind="visible: config.mqtt_enabled">
+              <b>Port*:</b><br>
+              <input data-bind="textInput: config.mqtt_port" type="text" autocapitalize="none"><br/>
+              <span class="small-text">e.g '1883'</span>
+            </p>
+            <p data-bind="visible: config.mqtt_enabled">
               <b>Username:</b><span> blank - no authentication</span>
               <input data-bind="textInput: config.mqtt_user" type="text" autocapitalize="none">
             </p>
